@@ -10,7 +10,8 @@ phases:
     commands:
       - go mod download
       - go build -o bin/applicaiton.go application.go
+      - ls
 
 artifacts:
   files:
-    - "bin/"
+    - bin/
