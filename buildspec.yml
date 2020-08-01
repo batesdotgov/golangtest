@@ -1,0 +1,17 @@
+version 0.2
+
+phases:
+    install:
+        runtime-versions:
+            golang: latest
+        commands:
+            - env
+            - go get -u github.com/golang/lint/golint
+    build:
+        commands:
+            - go mod download
+            - go build -o bin/applicaiton.go application.go
+
+artifacts:
+    files:
+        - "bin/"
