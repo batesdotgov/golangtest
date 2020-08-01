@@ -8,8 +8,6 @@ phases:
       - env
   build:
     commands:
-      - go mod download
-      - GOARCH=amd64 GOOS=linux go build -o application application.go
       - ls
 
 artifacts:
