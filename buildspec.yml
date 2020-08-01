@@ -6,7 +6,6 @@ phases:
       golang: latest
     commands:
       - env
-      - go get -u github.com/golang/lint/golint
   build:
     commands:
       - go mod download
