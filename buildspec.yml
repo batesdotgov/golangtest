@@ -13,5 +13,7 @@ phases:
       - ls
 
 artifacts:
+  type: s3
+  packaging: zip
   files:
     - application
