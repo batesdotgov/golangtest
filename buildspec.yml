@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - go mod download
-      - go build -o application.go application.go
+      - go build -o application application.go
       - ls
 
 artifacts:
