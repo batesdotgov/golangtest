@@ -9,5 +9,9 @@ phases:
   build:
     commands:
       - go mod download
-      - go build -o bin/application.go application.go
+      - go build -o application.go application.go
       - ls
+
+artifacts:
+  files:
+    - application
