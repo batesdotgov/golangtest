@@ -8,11 +8,12 @@ phases:
       - cd site && npm install
   build:
     commands:
-      - cd site && npm run build --production
+      - npm run build --production
   post_build:
     commands:
-      - ls
-      - cd site && rm -rf node_modules
+      - rm -rf node_modules
+      - rm -rf src
+      - rm -rf public
 
 artifacts:
   files:
