@@ -8,8 +8,12 @@ phases:
       - env
   build:
     commands:
+      - cd site && npm run build
+  post-build:
+    commands:
       - ls
+      - cd site && rm -rf node_modules
 
 artifacts:
   files:
-    - "**/*"
+    - '**/*'
