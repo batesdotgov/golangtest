@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - cd site && npm run build
-  post-build:
+  post_build:
     commands:
       - ls
       - cd site && rm -rf node_modules
